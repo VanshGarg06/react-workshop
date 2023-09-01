@@ -1,3 +1,19 @@
+:root{
+  --bd-purple: #4c0bce;
+  --bd-violet: #712cf9;
+  --bd-accent: #ffe484;
+  --bd-violet-rgb: 112.520718,44.062154,249.437846;
+  --bd-accent-rgb: 255,228,132;
+  --bd-pink-rgb: 214,51,132;
+  --bd-teal-rgb: 32,201,151;
+  --bd-violet-bg: var(--bd-violet);
+  --bd-toc-color: var(--bd-violet);
+  --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+  --bd-callout-link: 10,88,202;
+  --bd-callout-code-color: #ab296a;
+  --bd-pre-bg: var(--bs-tertiary-bg);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +51,114 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+  justify-content: center;
+  /* border:1px solid black; */
+  box-shadow: 0.5px 0.5px 4px grey;
+  border-radius:5px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.main{
+  /* border:2px solid red; */
+  background-color:rgba(255,255,255,0.3);
+  border-radius:20px;
+  width:500px;
+  padding:30px;
+  margin-top:60px;
+  margin-bottom:10px;
+}
+
+body{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  background-image:linear-gradient(120deg, rgba(214,51,132,0.8),rgba(112.520718,44.062154,249.437846,0.5),rgba(255,228,132,0.5),rgba(32,201,151,0.5),rgba(10,88,202,0.3));
+}
+
+.main h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom:10px;
+  color:rgb(71, 67, 67);
+}
+
+.container .image{
+  margin-right:20px;
+  /* border:1px solid black; */
+}
+
+.container .image img{
+  border-radius:50%;
+  width:50px;
+  height:50px;
+}
+
+.container .personal{
+  margin-right:25px;
+  width:100px;
+  /* border:1px solid black; */
+}
+
+.container .personal p{
+  font-size:17px;
+  font-weight:500;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container .birthday{
+  width:200px;
+}
+
+.container .birthday p{
+  text-shadow: 0.5px 0.5px 3px grey;
+  color:rgb(19, 6, 96);
+  font-size:18px;
+  font-weight:500;
+}
+
+.btn-remove button img{
+  width:30px;
+  height:30px;
+}
+.btn-remove button{
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.remove-all{
+  width:500px;  
+  height:50px;
+  margin-top:20px;
+  font-size:23px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgba(112.520718,44.062154,249.437846,0.5);
+  color:White;
+  border:none;
+}
+
+
+::-webkit-scrollbar{
+  width:10px;
+  background-color: rgb(227, 225, 225);
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(117, 116, 116);
+  border-radius:20px;
+}
+
+.person-remove{
+  width:100%;
+  text-shadow: 0.5px 0.5px 3px grey;
+  color:rgb(19, 6, 96);
+  font-size:24px;
+  margin-bottom:100px;
+  font-weight:500;
+  /* border:1px solid black; */
+  text-align:center;
 }
